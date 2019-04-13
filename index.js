@@ -1,36 +1,19 @@
-var StartingPoint = require('./letter.js');
+var settingGroundwork = require('./letter.js');
 
-var Game1 = new StartingPoint();
+var Game1 = new settingGroundwork();
 
-function compareLetters(letterGuessed){
-    if(this.choosenWord.indexOf(letterGuessed))
-}
+var letterGuessed = porcess.argv[2];
 
-// var trail1 = new StartingPoint.createGame();
-// trail1.startGame();
-//trail1.resettingGame();
-// StartingPoint.doSomething();
+    Game1.test=true;
+    Game1.letterGuessed=letterGuessed;
+    for(var i=0; i< Game1.doubleLetter.length; i++){
+        if(Game1.letterGuessed === Game1.doubleLetter[i] && test === true){
+            Game1.doubleLetter.splice(i,1);
+            Game1.compareLetters(letterGuessed);
+            Game1.winLose();
+        }
+    }
 
-// function compareLetters(letterGuessed){
-//     if(choosenWord.indexOf(letterGuessed)>-1){
-//         for(var i=0; i<blanks; i++){
-//             if(choosenWordLetters[i] === letterGuessed)
-//                 {rightGuess++;
-//                 playerArray[i] = letterGuessed;
-//                 document.getElementById('chosenWord').innerHTML=playerArray.join(' ');
-//                 }
-//             }
-//         }  
-//     else{
-//         wrongLetters.push(letterGuessed);
-//         guessesLeft--;
-//         document.getElementById('numberGuesses').innerHTML=guessesLeft;
-//         document.getElementById('wrongGuess').innerHTML=wrongLetters;
-//         console.log('Wrong Letters=' + wrongLetters);
-//         console.log('Guesses left are'+guessesLeft);
-//     }
-// }
 
-// console.log(StartingPoint);
-// var Game1 = new connecting();
-// Game1.connector.StartingPoint();
+
+
